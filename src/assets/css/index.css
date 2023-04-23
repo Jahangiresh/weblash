@@ -6,6 +6,20 @@
   @apply p-0 m-0 box-border;
   font-family: "Montserrat", sans-serif;
 }
+body::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+body::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+body::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
 .container {
   @apply lg:w-[1200px] max-md:px-5 max-sm:px-4  m-auto;
 }
