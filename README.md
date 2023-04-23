@@ -1,5 +1,4 @@
-# Bashlamazdan evvel
-
+# salamm ugurlar :)
  [Tailwind ](https://tailwindcss.com/) 
  
  
