@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Logo from "../../assets/images/Logo.svg";
 import { Navs } from "../../Configs";
 import MenuDrawer from "./MenuDrawer";
@@ -16,9 +17,12 @@ const Header = () => {
           <ul className="flex items-center">
             {Navs &&
               Navs.map((nav) => (
-                <li className="max-lg:mr-4 max-lg:text-sm mr-10 font-medium  capitalize cursor-pointer">
+                <Link
+                  to={nav.hrefLink}
+                  className="max-lg:mr-4 max-lg:text-sm mr-10 font-medium  capitalize cursor-pointer"
+                >
                   {nav.name}
-                </li>
+                </Link>
               ))}
             <li className="box__contact capitalize font-medium cursor-pointer max-lg:px-2">
               bizimlə əlaqə
