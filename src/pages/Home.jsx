@@ -1,6 +1,7 @@
 import React from "react";
 import AboutComponent from "../components/About/AboutComponent";
 import AboutUs from "../components/About/AboutUs";
+import BlogComponent from "../components/Blog/BlogComponent";
 import PortfolioComponent from "../components/Portfolio/PortfolioComponent";
 import Services from "../components/Services/Services";
 import TeamComponent from "../components/Team/TeamComponent";
@@ -52,6 +53,7 @@ const Home = () => {
       <Services />
       <TeamComponent />
       <PortfolioComponent />
+      <BlogComponent />
     </div>
   );
 };

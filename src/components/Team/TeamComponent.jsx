@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const TeamComponent = () => {
   return (
-    <div className="bg__beige mt-16 pb-16 pt-14">
+    <div className="bg__beige mt-16 py-14">
       <div className="container">
         <div className="grid max-sm:grid-cols-3 max-lg:grid-cols-2 grid-cols-3">
           <h1 className="capitalize text-xl font-bold mb-2 sm:col-span-3">
