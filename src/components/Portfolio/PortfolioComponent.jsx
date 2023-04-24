@@ -17,7 +17,8 @@ const PortfolioComponent = () => {
           <Link className="col-span-2 flex justify-end">Hamısını gör</Link>
         </div>
         <div className="flex">
-          <div className="box__milky mt-5 ">s</div>
+          <div className="box__milky mt-5 ">salam</div>
+    
         </div>
       </div>
     </div>
