@@ -7,7 +7,10 @@ import {
 } from "react-router-dom";
 import Header from "../components/Header/Header";
 import HeaderUpper from "../components/Header/HeaderUpper";
+import About from "../pages/About";
 import Home from "../pages/Home";
+import Services from "../pages/Services";
+import Team from "../pages/Team";
 const Layout = () => {
   return (
     <div className="layout__app">
@@ -16,6 +19,9 @@ const Layout = () => {
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/team" element={<Team />} />
         </Routes>
       </BrowserRouter>
     </div>
