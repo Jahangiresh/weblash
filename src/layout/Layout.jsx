@@ -9,6 +9,7 @@ import Header from "../components/Header/Header";
 import HeaderUpper from "../components/Header/HeaderUpper";
 import About from "../pages/About";
 import Home from "../pages/Home";
+import Footer from "../components/Footer/Footer";
 import Services from "../pages/Services";
 import Team from "../pages/Team";
 import Portfolio from "../pages/Portfolio/Portfolio";
@@ -35,6 +36,7 @@ const Layout = () => {
           <Route path="/blog" element={<Blog />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
     </div>
   );
