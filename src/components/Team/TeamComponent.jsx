@@ -1,5 +1,6 @@
 import React from "react";
 import { FaBehance, FaLinkedin, FaWhatsapp } from "react-icons/fa";
+import { TeamMembers } from "../../Configs/TeamMembers";
 
 import { Link } from "react-router-dom";
 import TeamCard from "./TeamCard";
@@ -20,12 +21,17 @@ const TeamComponent = () => {
           <Link className="col-span-2 flex justify-end">Hamısını gör</Link>
         </div>
         <div className="grid lg:grid-cols-3 sm:grid-cols-2  gap-8">
-          <TeamCard />
-          <TeamCard />
-          <TeamCard />
-          <TeamCard />
-          <TeamCard />
-          <TeamCard />
+          {TeamMembers &&
+            TeamMembers.slice(0, 6).map((teamMember) => (
+              <TeamCard
+                name={teamMember.name}
+                surname={teamMember.surname}
+                role={teamMember.role}
+                about={teamMember.about}
+                socials={teamMember.socials}
+                image={teamMember.image}
+              />
+            ))}
         </div>
       </div>
     </div>

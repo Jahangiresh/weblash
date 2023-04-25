@@ -2,8 +2,10 @@ import React from "react";
 import alishanPng from "../../assets/images/alishan.png";
 import { Link } from "react-router-dom";
 import PortfolioCard from "./PortfolioCard";
+import { PortfolioConfigs } from "../../Configs/PortfolioConfigs";
 
 const PortfolioComponent = () => {
+  // const [portfolios, setPortfolios] = useState(PortfolioConfigs);
   return (
     <div className="mt-16 pb-16">
       <div className="container">
@@ -19,8 +21,15 @@ const PortfolioComponent = () => {
           <Link className="col-span-2 flex justify-end">Hamısını gör</Link>
         </div>
         <div className="portfolio__rail flex max-md:overflow-auto gap-6 !box-border">
-          <PortfolioCard />
-          <PortfolioCard />
+          {PortfolioConfigs &&
+            PortfolioConfigs.slice(0, 2).map((PortfolioConfig) => (
+              <PortfolioCard
+                image={PortfolioConfig.image}
+                title={PortfolioConfig.title}
+                body={PortfolioConfig.body}
+                href={PortfolioConfig.href}
+              />
+            ))}
         </div>
       </div>
     </div>

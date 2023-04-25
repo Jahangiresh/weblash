@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import BlogCard from "./BlogCard";
+import { BlogConfigs } from "../../Configs/BlogConfigs";
 
 const BlogComponent = () => {
   return (
@@ -18,8 +19,10 @@ const BlogComponent = () => {
           <Link className="col-span-2 flex justify-end">Hamısını gör</Link>
         </div>
         <div className="portfolio__rail flex max-md:overflow-auto gap-6 !box-border">
-          <BlogCard />
-          <BlogCard />
+          {BlogConfigs &&
+            BlogConfigs.slice(0, 2).map((BlogConfig) => (
+              <BlogCard title={BlogConfig.title} body={BlogConfig.body} />
+            ))}
         </div>
       </div>
     </div>

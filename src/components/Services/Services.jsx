@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import ServiceCard from "./ServiceCard";
+import { ServicesConfigs } from "../../Configs/ServicesConfigs";
 
 const Services = () => {
   return (
@@ -17,12 +18,13 @@ const Services = () => {
         <Link className="col-span-2 flex justify-end">Hamısını gör</Link>
       </div>
       <div className="grid lg:grid-cols-3 sm:grid-cols-2  gap-8">
-        <ServiceCard />
-        <ServiceCard />
-        <ServiceCard />
-        <ServiceCard />
-        <ServiceCard />
-        <ServiceCard />
+        {ServicesConfigs &&
+          ServicesConfigs.slice(0, 6).map((ServicesConfig) => (
+            <ServiceCard
+              title={ServicesConfig.title}
+              body={ServicesConfig.body}
+            />
+          ))}
       </div>
     </div>
   );

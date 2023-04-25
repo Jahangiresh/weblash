@@ -4,7 +4,7 @@ import Drawer from "@mui/material/Drawer";
 import { FiMenu } from "react-icons/fi";
 import { RxCross2 } from "react-icons/rx";
 import { useTranslation } from "react-i18next";
-import { Navs } from "../../Configs";
+import { Navs } from "../../Configs/Navs";
 export default function MenuDrawer() {
   const [state, setState] = React.useState({
     top: false,
