@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import ServiceCard from "./ServiceCard";
 
 const Services = () => {
   return (
@@ -16,78 +17,12 @@ const Services = () => {
         <Link className="col-span-2 flex justify-end">Hamısını gör</Link>
       </div>
       <div className="grid lg:grid-cols-3 sm:grid-cols-2  gap-8">
-        <div className="box__milky pt-6 mt-6  shrink-0 ">
-          <span className="text-2xl font-medium bg__red rounded-full w-14 h-14 flex justify-center items-center">
-            {"</"}
-          </span>
-          <h2 className="font-bold leading-9 text-xl mt-6">
-            Web saytların hazırlanması
-          </h2>
-          <p className="mt-2 mb-8">
-            Onlarla böyük funksionallı sayt və platformaları hazırlamış
-            heyətimiz bu sahədə ölkədə qabaqcıl təcrübəyə malikdir.
-          </p>
-        </div>{" "}
-        <div className="box__milky pt-6 mt-6  ">
-          <span className="text-2xl font-medium bg__red rounded-full w-14 h-14 flex justify-center items-center">
-            {"</"}
-          </span>
-          <h2 className="font-bold leading-9 text-xl mt-6">
-            Web saytların hazırlanması
-          </h2>
-          <p className="mt-2 mb-8">
-            Onlarla böyük funksionallı sayt və platformaları hazırlamış
-            heyətimiz bu sahədə ölkədə qabaqcıl təcrübəyə malikdir.
-          </p>
-        </div>{" "}
-        <div className="box__milky pt-6 mt-6  ">
-          <span className="text-2xl font-medium bg__red rounded-full w-14 h-14 flex justify-center items-center">
-            {"</"}
-          </span>
-          <h2 className="font-bold leading-9 text-xl mt-6">
-            Web saytların hazırlanması
-          </h2>
-          <p className="mt-2 mb-8">
-            Onlarla böyük funksionallı sayt və platformaları hazırlamış
-            heyətimiz bu sahədə ölkədə qabaqcıl təcrübəyə malikdir.
-          </p>
-        </div>{" "}
-        <div className="box__milky pt-6 mt-6  ">
-          <span className="text-2xl font-medium bg__red rounded-full w-14 h-14 flex justify-center items-center">
-            {"</"}
-          </span>
-          <h2 className="font-bold leading-9 text-xl mt-6">
-            Web saytların hazırlanması
-          </h2>
-          <p className="mt-2 mb-8">
-            Onlarla böyük funksionallı sayt və platformaları hazırlamış
-            heyətimiz bu sahədə ölkədə qabaqcıl təcrübəyə malikdir.
-          </p>
-        </div>{" "}
-        <div className="box__milky pt-6 mt-6  ">
-          <span className="text-2xl font-medium bg__red rounded-full w-14 h-14 flex justify-center items-center">
-            {"</"}
-          </span>
-          <h2 className="font-bold leading-9 text-xl mt-6">
-            Web saytların hazırlanması
-          </h2>
-          <p className="mt-2 mb-8">
-            Onlarla böyük funksionallı sayt və platformaları hazırlamış
-            heyətimiz bu sahədə ölkədə qabaqcıl təcrübəyə malikdir.
-          </p>
-        </div>{" "}
-        <div className="box__milky pt-6 mt-6  ">
-          <span className="text-2xl font-medium bg__red rounded-full w-14 h-14 flex justify-center items-center">
-            {"</"}
-          </span>
-          <h2 className="font-bold leading-9 text-xl mt-6">
-            Web saytların hazırlanması
-          </h2>
-          <p className="mt-2 mb-8">
-            Onlarla böyük funksionallı sayt və platformaları hazırlamış
-            heyətimiz bu sahədə ölkədə qabaqcıl təcrübəyə malikdir.
-          </p>
-        </div>
+        <ServiceCard />
+        <ServiceCard />
+        <ServiceCard />
+        <ServiceCard />
+        <ServiceCard />
+        <ServiceCard />
       </div>
     </div>
   );
