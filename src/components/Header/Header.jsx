@@ -24,9 +24,12 @@ const Header = () => {
                   {nav.name}
                 </Link>
               ))}
-            <li className="box__contact capitalize font-medium cursor-pointer max-lg:px-2">
+            <Link
+              to="contact"
+              className="box__contact capitalize font-medium cursor-pointer max-lg:px-2"
+            >
               bizimlə əlaqə
-            </li>
+            </Link>
           </ul>
         </nav>
       </div>
