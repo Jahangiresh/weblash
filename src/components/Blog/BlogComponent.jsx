@@ -1,11 +1,9 @@
 import React from "react";
-import alishanPng from "../../assets/images/alishan.png";
 import { Link } from "react-router-dom";
-import PortfolioCard from "./PortfolioCard";
-import { PortfolioConfigs } from "../../Configs/PortfolioConfigs";
+import BlogCard from "./BlogCard";
+import { BlogConfigs } from "../../Configs/BlogConfigs";
 
-const PortfolioComponent = () => {
-  // const [portfolios, setPortfolios] = useState(PortfolioConfigs);
+const BlogComponent = () => {
   return (
     <div className="mt-16 pb-16">
       <div className="container">
@@ -21,14 +19,9 @@ const PortfolioComponent = () => {
           <Link className="col-span-2 flex justify-end">Hamısını gör</Link>
         </div>
         <div className="portfolio__rail flex max-md:overflow-auto gap-6 !box-border">
-          {PortfolioConfigs &&
-            PortfolioConfigs.slice(0, 2).map((PortfolioConfig) => (
-              <PortfolioCard
-                image={PortfolioConfig.image}
-                title={PortfolioConfig.title}
-                body={PortfolioConfig.body}
-                href={PortfolioConfig.href}
-              />
+          {BlogConfigs &&
+            BlogConfigs.slice(0, 2).map((BlogConfig) => (
+              <BlogCard title={BlogConfig.title} body={BlogConfig.body} />
             ))}
         </div>
       </div>
@@ -36,4 +29,4 @@ const PortfolioComponent = () => {
   );
 };
 
-export default PortfolioComponent;
+export default BlogComponent;

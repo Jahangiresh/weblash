@@ -7,8 +7,15 @@ import {
 } from "react-router-dom";
 import Header from "../components/Header/Header";
 import HeaderUpper from "../components/Header/HeaderUpper";
+import About from "../pages/About";
 import Home from "../pages/Home";
 import Footer from "../components/Footer/Footer";
+import Services from "../pages/Services";
+import Team from "../pages/Team";
+import Portfolio from "../pages/Portfolio/Portfolio";
+import PortfolioDetail from "../pages/Portfolio/PortfolioDetail";
+import Blog from "../pages/Blog";
+import Contact from "../pages/Contact";
 const Layout = () => {
   return (
     <div className="layout__app">
@@ -17,6 +24,17 @@ const Layout = () => {
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/services" element={<Services />} />
+
+          {/* portfolio  */}
+          <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/portfolio/:id" element={<PortfolioDetail />} />
+          {/* portfolio  */}
+          <Route path="/team" element={<Team />} />
+
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
         <Footer />
       </BrowserRouter>

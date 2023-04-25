@@ -6,6 +6,7 @@
   @apply p-0 m-0 box-border;
   font-family: "Montserrat", sans-serif;
 }
+
 body::-webkit-scrollbar {
   width: 5px;
 }
@@ -103,4 +104,42 @@ body::-webkit-scrollbar-thumb {
 }
 .my__input:focus {
   box-shadow: rgb(0, 232, 82, 1) 4px 4px 0px -1px, rgb(0, 0, 0) 4px 4px;
+}
+
+/* portfolio scroll  */
+
+.portfolio__rail::-webkit-scrollbar {
+  height: 5px;
+}
+
+/* Track */
+.portfolio__rail::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+.portfolio__rail::-webkit-scrollbar-thumb {
+  background: rgb(0, 255, 17);
+}
+
+/* title section  */
+@media (max-width: 639px) {
+  .portfolioContainer {
+    @apply pt-[39rem];
+  }
+}
+@media (max-width: 513px) {
+  .portfolioContainer {
+    @apply pt-[30rem];
+  }
+}
+@media (max-width: 415px) {
+  .portfolioContainer {
+    @apply pt-[250px];
+  }
+}
+@media (max-width: 390px) {
+  .portfolioContainer {
+    @apply pt-[210px];
+  }
 }
