@@ -2,7 +2,7 @@ import React from "react";
 
 const ServiceCard = () => {
   return (
-    <div className="box__milky pt-6 mt-6  ">
+    <div className="box__milky pt-6 mt-6  cursor-cell">
       <span className="text-2xl font-medium bg__red rounded-full w-14 h-14 flex justify-center items-center">
         {"</"}
       </span>
