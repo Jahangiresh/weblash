@@ -1,6 +1,6 @@
 import React from "react";
-import TitleSection from "../components/TitleSection";
-import PortfolioCard from "../components/Portfolio/PortfolioCard";
+import TitleSection from "../../components/TitleSection";
+import PortfolioCard from "../../components/Portfolio/PortfolioCard";
 
 const Portfolio = () => {
   return (

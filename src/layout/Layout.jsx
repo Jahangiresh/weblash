@@ -11,7 +11,8 @@ import About from "../pages/About";
 import Home from "../pages/Home";
 import Services from "../pages/Services";
 import Team from "../pages/Team";
-import Portfolio from "../pages/Portfolio";
+import Portfolio from "../pages/Portfolio/Portfolio";
+import PortfolioDetail from "../pages/Portfolio/PortfolioDetail";
 import Blog from "../pages/Blog";
 const Layout = () => {
   return (
@@ -23,8 +24,13 @@ const Layout = () => {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Services />} />
-          <Route path="/team" element={<Team />} />
+
+          {/* portfolio  */}
           <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/portfolio/:id" element={<PortfolioDetail />} />
+          {/* portfolio  */}
+          <Route path="/team" element={<Team />} />
+
           <Route path="/blog" element={<Blog />} />
         </Routes>
       </BrowserRouter>

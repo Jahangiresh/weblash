@@ -6,7 +6,7 @@ const TitleSection = ({ title }) => {
   return (
     <div
       style={{ backgroundImage: `url(${bg})` }}
-      className="title__section__cover h-[180px] bg__beige bg-cover bg-center "
+      className="title__section__cover h-[180px] bg__beige bg-cover bg-center mb-6 "
     >
       <div className="container h-full flex flex-col justify-center gap-4">
         <h1 className="font-bold text-[28px]">{title}</h1>

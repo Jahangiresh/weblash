@@ -122,3 +122,23 @@ body::-webkit-scrollbar-thumb {
 }
 
 /* title section  */
+@media (max-width: 639px) {
+  .portfolioContainer {
+    @apply pt-[39rem];
+  }
+}
+@media (max-width: 513px) {
+  .portfolioContainer {
+    @apply pt-[30rem];
+  }
+}
+@media (max-width: 415px) {
+  .portfolioContainer {
+    @apply pt-[250px];
+  }
+}
+@media (max-width: 390px) {
+  .portfolioContainer {
+    @apply pt-[210px];
+  }
+}
