@@ -1,7 +1,7 @@
 import React from "react";
-import BlogCard from "../components/Blog/BlogCard";
-import TitleSection from "../components/TitleSection";
-import { BlogConfigs } from "../Configs/BlogConfigs";
+import BlogCard from "../../components/Blog/BlogCard";
+import TitleSection from "../../components/TitleSection";
+import { BlogConfigs } from "../../Configs/BlogConfigs";
 
 const Blog = () => {
   return (

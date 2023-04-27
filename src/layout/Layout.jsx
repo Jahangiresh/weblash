@@ -14,8 +14,9 @@ import Services from "../pages/Services";
 import Team from "../pages/Team";
 import Portfolio from "../pages/Portfolio/Portfolio";
 import PortfolioDetail from "../pages/Portfolio/PortfolioDetail";
-import Blog from "../pages/Blog";
+import Blog from "../pages/Blog/Blog";
 import Contact from "../pages/Contact";
+import BlogDetail from "../pages/Blog/BlogDetail";
 const Layout = () => {
   return (
     <div className="layout__app">
@@ -31,9 +32,15 @@ const Layout = () => {
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/portfolio/:id" element={<PortfolioDetail />} />
           {/* portfolio  */}
+
+          {/* blog   */}
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/:id" element={<BlogDetail />} />
+
+          {/* blog   */}
+
           <Route path="/team" element={<Team />} />
 
-          <Route path="/blog" element={<Blog />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
         <Footer />

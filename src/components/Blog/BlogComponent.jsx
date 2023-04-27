@@ -3,11 +3,15 @@ import { Link } from "react-router-dom";
 import BlogCard from "./BlogCard";
 import { BlogConfigs } from "../../Configs/BlogConfigs";
 
-const BlogComponent = () => {
+const BlogComponent = ({ hideHeader }) => {
   return (
     <div className="mt-16 pb-16">
       <div className="container">
-        <div className="grid max-sm:grid-cols-3 max-lg:grid-cols-2 grid-cols-3">
+        <div
+          className={`${
+            hideHeader && hideHeader
+          } grid max-sm:grid-cols-3 max-lg:grid-cols-2 grid-cols-3 `}
+        >
           <h1 className="capitalize text-xl font-bold mb-2 sm:col-span-3">
             xidmətlərimiz
           </h1>
