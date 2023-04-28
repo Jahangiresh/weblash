@@ -7,7 +7,7 @@ const Blog = () => {
   return (
     <>
       <TitleSection title={"Blog"} />
-      <div className="container">
+      <div className="container pt-3 pb-[60px]">
         <div className=" grid md:grid-cols-2 gap-6 ">
           {BlogConfigs &&
             BlogConfigs.map((BlogConfig) => (

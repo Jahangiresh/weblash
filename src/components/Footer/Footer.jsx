@@ -31,7 +31,7 @@ const Footer = () => {
       </section>
       <section className="py-12 border-[#232323] border-b-[1px]">
         <div className="container">
-          <div className="grid grid-cols-3 max-md:grid-cols-2">
+          <div className="grid grid-cols-3 max-md:grid-cols-2 max-sm:grid-cols-1">
             <div className="">
               <h5 className="font-bold text-xl text-white mb-3">Missiyamız</h5>
               <p className="text-white font-normal text-base">
@@ -39,7 +39,7 @@ const Footer = () => {
                 qiymət və professional IT xidmət təklif edirik.
               </p>
             </div>
-            <div className="flex justify-center">
+            <div className="flex justify-center max-sm:justify-start max-sm:mt-6">
               <div>
                 <h5 className="font-bold text-xl text-white mb-3">Weblash</h5>
                 <ul>
@@ -102,7 +102,7 @@ const Footer = () => {
                 </ul>
               </div>
             </div>
-            <div className="flex justify-center max-md:justify-start">
+            <div className="flex justify-center max-md:justify-start max-sm:mt-6">
               <div>
                 <h5 className="font-bold text-xl text-white mb-3">
                   Əlaqə vasitələrimiz

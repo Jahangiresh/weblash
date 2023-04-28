@@ -8,7 +8,7 @@ import TeamComponent from "../components/Team/TeamComponent";
 // import "../assets/css/app.scss";
 const Home = () => {
   return (
-    <div className="home ">
+    <div className="home">
       <div className="home__container  md:h-[740px]  items-center container flex max-md:flex-col ">
         <div className="titles__left md:w-1/2 max-md:text-center max-md:mt-8">
           <h1 className="max-md:text-3xl text-5xl font-bold  leading-normal mb-4">

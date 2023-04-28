@@ -5,7 +5,7 @@ const Contact = () => {
   return (
     <>
       <TitleSection title="Əlaqə" />
-      <div className="container  text-center ">
+      <div className="container  text-center pt-9 pb-9">
         <h2 className="font-bold text-xl ">
           Xoş gəldiniz, sizə necə kömək edə bilərik?
         </h2>

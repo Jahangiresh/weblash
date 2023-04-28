@@ -7,7 +7,7 @@ const BlogDetail = () => {
   return (
     <>
       <TitleSection title={"Blog"} />
-      <div className="flex container flex-col gap-2 items-center !w-[792px] pb-6">
+      <div className="flex container flex-col gap-2 items-center !w-[792px] pt-9">
         <h1 className="text-4xl text-[#121212] font-bold">
           Veb saytların hazırlanmasının mərhələləri
         </h1>

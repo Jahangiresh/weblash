@@ -9,7 +9,7 @@ const Team = () => {
   return (
     <>
       <TitleSection title={"Komandamız"} />
-      <div className="container">
+      <div className="container pt-3 pb-[60px]">
         <div className="grid lg:grid-cols-3 sm:grid-cols-2  gap-8">
           {TeamMembers &&
             TeamMembers.map((teamMember) => (
